@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Data Practices and Privacy</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onscroll = function() {
+            shrinkHeader();
+        };
+
+        function shrinkHeader() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Facebook: What You Need to Know</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facebook.html">Facebook</a></li>
+                <li><a href="instagram.html">Instagram</a></li>
+                <li><a href="twitter.html">Twitter</a></li>
+                <li><a href="tiktok.html">TikTok</a></li>
+                <li><a href="snapchat.html">Snapchat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/vyRsarL-dqk?si=Ur3wILW-ZfTxBUGi" 
+                        title="Facebook Data Privacy Explained" 
+                        frameborder="0" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <h2>How Facebook Harvests Your Data</h2>
+            <p>
+                Facebook collects vast amounts of data from its users, including personal information, location, browsing habits, interactions, and preferences. This information is used to create detailed profiles, which are then leveraged for targeted advertising.
+            </p>
+
+            <h2>Notable Data Breaches and Privacy Violations</h2>
+            <ul>
+                <li>
+                    <strong>Cambridge Analytica Scandal (2018):</strong> The personal data of up to 87 million users was improperly shared with a political consulting firm, raising concerns about Facebook's data-sharing practices.
+                </li>
+                <li>
+                    <strong>540 Million Records Exposed (2019):</strong> Unprotected databases on third-party servers leaked user IDs, passwords, and account details.
+                </li>
+                <li>
+                    <strong>Phone Number Leak (2021):</strong> Data from 533 million accounts, including phone numbers, was leaked on hacking forums.
+                </li>
+            </ul>
+
+            <h2>Privacy Concerns</h2>
+            <blockquote>
+                "Facebook knows more about its users than some of their closest friends do." – Privacy Advocate
+            </blockquote>
+            <p>
+                Facebook's data collection practices have been criticized for their lack of transparency. Users often feel that they are unaware of how much information is being collected and shared.
+            </p>
+        </main>
+
+        <div class="button-container">
+            <button onclick="location.href='resources.html'">Learn More About Data Privacy</button>
+        </div>
+    </div>
+</body>
+</html>
