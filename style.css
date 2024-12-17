@@ -32,7 +32,9 @@ nav {
     padding: 0 50px;
 }
 
-.logo {
+.logo a {
+    color: #fff;
+    text-decoration: none;
     font-size: 24px;
     font-weight: bold;
 }
@@ -63,6 +65,7 @@ nav {
     background-color: #333;
     text-align: center;
     padding: 150px 20px;
+    margin-top: 60px;
 }
 
 .hero h1 {
@@ -73,21 +76,6 @@ nav {
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #00d8d6;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    margin: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #00a1a1;
 }
 
 /* Platforms Section */
@@ -117,6 +105,8 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
+    color: #fff;
 }
 
 .platform-card:hover {
@@ -125,15 +115,15 @@ nav {
 }
 
 .platform-card img {
-    width: 50px;           /* Small, fixed size for icons */
-    height: 50px;          /* Maintain square ratio */
-    object-fit: contain;   /* Maintain image aspect ratio inside the box */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
     margin-bottom: 10px;
     transition: transform 0.2s ease;
 }
 
 .platform-card:hover img {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2);
 }
 
 .platform-card h3 {
@@ -143,15 +133,10 @@ nav {
     font-weight: normal;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #111;
     color: #fff;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
 }
