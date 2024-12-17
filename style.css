@@ -104,6 +104,53 @@ iframe {
     margin-left: 20px;
 }
 
+/* Index Page Platform Icons */
+.platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.platform {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 120px; /* Adjust width for smaller button size */
+}
+
+.platform a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.platform img {
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.platform h3 {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Responsive Design for Index Page */
+@media (max-width: 600px) {
+    .platform {
+        width: 100px; /* Adjust button size on smaller screens */
+    }
+
+    .platform img {
+        width: 40px; /* Adjust icon size for mobile */
+        height: 40px;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header-container {
