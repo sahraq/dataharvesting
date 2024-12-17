@@ -6,7 +6,7 @@
 }
 
 body {
-   font-family: 'Courier New', monospace
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 /* Header Styles */
 header {
     background-color: #0073e6;
-    color: green;
+    color: white;
     padding: 40px 20px;
     text-align: center;
 }
@@ -28,34 +28,6 @@ header {
 .subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
-}
-
-/* Navigation Styles */
-nav {
-    margin-top: 20px;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-.nav-list li {
-    margin: 0 15px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-list a:hover {
-    color: #ffcc00;
 }
 
 /* Container */
@@ -81,8 +53,8 @@ nav {
 }
 
 .platform img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Adjusted icon size */
+    height: 50px; /* Adjusted icon size */
     margin-bottom: 15px;
 }
 
@@ -116,17 +88,7 @@ nav {
     }
 
     .platform img {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Responsive Menu */
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px; /* Smaller icons on mobile */
     }
 }
-
