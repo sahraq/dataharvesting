@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier New', monospace;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -53,8 +53,8 @@ header {
 }
 
 .platform img {
-    width: 60px;
-    height: 60px;
+    width: 50px; /* Adjusted icon size */
+    height: 50px; /* Adjusted icon size */
     margin-bottom: 15px;
 }
 
@@ -86,5 +86,9 @@ header {
     .platform {
         padding: 15px;
     }
-}
 
+    .platform img {
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px; /* Smaller icons on mobile */
+    }
+}
