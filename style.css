@@ -1,4 +1,4 @@
-/* Resetting some default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,61 +6,123 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-/* Header */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-header h1 {
-    color: #0044cc;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 20px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-h2 {
-    color: #0077b5;
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-ul {
-    list-style-type: disc;
+.nav-links li {
     margin-left: 20px;
 }
 
-/* Platform Icons */
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: #00d8d6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #00d8d6;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00a1a1;
+}
+
+/* Platforms Section */
+.platforms {
+    text-align: center;
+    padding: 50px 20px;
+}
+
 .platform-icons {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.platform-icons a {
-    display: inline-block;
+.platform-card {
+    background-color: #222;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.platform-icons img {
+.platform-card:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+}
+
+.platform-card img {
     width: 50px;
     height: 50px;
-    transition: transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
-.platform-icons img:hover {
-    transform: scale(1.2);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
+.platform-card h3 {
+    font-size: 18px;
+    color:
